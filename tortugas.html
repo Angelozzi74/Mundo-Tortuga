@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORTUGAS NINJAS</title>
+
+    <!-- ENLACE AL ARCHIVO CSS -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlace al archivo JS -->
+
+    <!-- CREADO EN PANTALLA EXTENDIDA 1366 X 768 -->
+    <script src = "Tortugas.js"></script>
+</head>
+
+<!-- inicio del cuerpo del documento -->
+<body>
+
+    <!-- seccion del enbezado -->
+    <header>The Ninjas Turtles</header>
+
+    <!-- seccion barra de navegacion -->
+    <nav>
+        <div>Personajes</div>
+        <div>Capitulos</div>
+        <div>Peliculas</div>
+        <div>Juegos</div>
+        <div>Contactanos</div>
+    </nav>
+    <!-- seccion principal -->
+    <main>
+
+        <!-- lista de imagenes -->
+        <ul>
+        <li>
+        <img src="IMAGENES/TORTUGA (1).jpg" 
+        alt="imagen de leo"
+        width="60%"
+        height="auto" id="leonardo"></li>
+        <li>
+        <img src="IMAGENES/TORTUGA (2).jpg" alt="Foto de leo"
+        width="60%"
+        height="auto" id="donatello"></li>
+        <li>
+        <img src="IMAGENES/TORTUGA (3).jpg" alt="es leo"
+        width="60%"
+        height="auto" id="miguel"></li>
+        <li>
+        <img src="IMAGENES/TORTUGA (4).jpg" alt="leo"
+        width="84%"
+        height="auto" id="rafael"></li>
+        </ul>
+
+        <!-- lista de nombres -->
+        <ul>
+        <li id="leonardoName">Leonardo</li>
+        <li id="donatelloName">Donatello</li>
+        <li id="miguelName">Miguel</li>
+        <li id="rafaelName">Rafael</li>
+
+        </ul>
+        <!-- descripciones -->
+        <div class="descriptionDonie">Donatello es el mas campeon de todos, y el mas bueno..!!!
+
+        </div>
+
+        <!-- seccion final -->
+
+        <footer>
+
+        <div>Bienvenidos al Mundo Tortuga......!!!!!</div>
+        <!-- Div para escribir datos desde JS -->
+
+        <div id= "salida"></div>
+        </footer>
+    </main>
+<!-- Codigo Javascrit -->
+
+<script>
+
+    // Mensaje a la consola
+    console.log("Este es un mensaje de consola");
+    // Realizar algunas operaciones
+    let a = 15;
+    let b = 17;
+    let c = a*b/2;
+    //mostrar resultado en consola
+    console.log("A + B = " + c);
+
+    //crear una variable para guardar una fecha
+    let fecha = new Date();
+    //declarar un elemenyo de salida usando ID
+    let divSalida = document.getElementById("salida");
+    //escribir en el elemento salida, usando innerHtml
+
+    divSalida.innerHTML = "Hoy es " + fecha.toDateString();
+
+    //divSalida.innerHTML += ". A + B = " + c;
+
+    divSalida.style.color = "lightgreen";
+    divSalida.style.margin = "15px 0 0 0";
+
+</script>
+</body>
+</html>
